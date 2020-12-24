@@ -5,9 +5,11 @@ const fullConfig = resolveConfig(tailwindConfig);
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Tailwind`,
-    description: `Gatsby starter styled with Tailwind`,
-    author: `@taylorbryant`,
+    title: `abuuzayr's portfolio`,
+    description: `Dev portfolio for Muhammad Fawwaz / abuuzayr`,
+    author: `@abuuzayr`,
+    linkedin: `https://www.linkedin.com/in/muhammadfawwaz/`,
+    github: `https://github.com/abuuzayr`,
   },
   plugins: [
     `gatsby-plugin-eslint`,
@@ -21,7 +23,7 @@ module.exports = {
         background_color: fullConfig.theme.colors.white,
         theme_color: fullConfig.theme.colors.green["500"],
         display: `minimal-ui`,
-        icon: `src/images/tailwind-icon.png`,
+        icon: `src/images/favicon.ico`,
       },
     },
     {
