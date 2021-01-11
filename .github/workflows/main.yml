@@ -27,4 +27,6 @@ jobs:
       - run: |
           git config --global user.name "abuuzayr"
           git config --global user.email "abu.uzayr@builtforfifty.com"
+          git remote rm origin
+          git remote add origin 'git@github.com:abuuzayr/abuuzayr.github.io.git'
           yarn && yarn run deploy
