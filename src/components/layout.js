@@ -6,7 +6,7 @@ import Footer from "./footer.tsx";
 
 function Layout({ children }) {
   return (
-    <div className="flex flex-col min-h-screen font-sans text-gray-900">
+    <div className="flex flex-col min-h-screen font-sans text-gray-900 dark:text-gray-100 dark:bg-black">
       <Header />
 
       <main className="flex-1 w-full max-w-4xl px-4 py-8 mx-auto md:px-8 md:py-16">
