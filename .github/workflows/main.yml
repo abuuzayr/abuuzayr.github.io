@@ -23,8 +23,11 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          publish_branch: master
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+      - uses: actions/checkout@v2
+      - name: Set git config
+        run: |
+          git config --global user.name "abuuzayr"
+          git config --global user.email "abu.uzayr@builtforfifty.com"
+
+      - name: run deploy script
+        run: yarn && yarn run deploy
