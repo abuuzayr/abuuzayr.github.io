@@ -16,9 +16,9 @@ function IndexPage() {
         <script>
           {`
             if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-              document.querySelector('html').classList.add('dark')
+              document.body.classList.add('dark')
             } else {
-              document.querySelector('html').classList.remove('dark')
+              document.body.classList.remove('dark')
             }
           `}
         </script>
