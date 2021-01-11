@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from "react";
 
 function Header() {
-  const [dark, setDark] = useState(
-    localStorage.theme === "dark" ||
+  let isDark = false
+  if (typeof localStorage !== 'undefined') {
+    isDark = localStorage.theme === "dark" ||
       (!("theme" in localStorage) &&
-        window.matchMedia("(prefers-color-scheme: dark)").matches)
-  );
+        window.matchMedia("(prefers-color-scheme: dark)").matches);
+  }
+  const [dark, setDark] = useState(isDark);
   useEffect(() => {
     if (dark) {
       !document.body.classList.contains("dark") && document.body.classList.add("dark");
