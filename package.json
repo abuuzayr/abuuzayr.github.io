@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-tailwind",
-  "description": "Gatsby starter styled with Tailwind",
-  "version": "5.0.0",
-  "author": "Taylor Bryant <taylor@bryant.io>",
+  "name": "abuuzayr.github.io",
+  "description": "Portfolio site of Abu Uzayr / Muhammad Fawwaz",
+  "version": "2.0.0",
+  "author": "Abu Uzayr <abu.uzayr@builtforfifty.com>",
   "dependencies": {
     "gatsby": "2.28.2",
     "gatsby-plugin-google-fonts": "^1.0.1",
@@ -58,9 +58,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/oddstronaut/gatsby-starter-tailwind"
+    "url": "https://github.com/abuuzayr/abuuzayr.github.io"
   },
   "bugs": {
-    "url": "https://github.com/oddstronaut/gatsby-starter-tailwind/issues"
+    "url": "https://github.com/abuuzayr/abuuzayr.github.io/issues"
   }
 }
