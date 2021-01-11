@@ -28,6 +28,10 @@ jobs:
         run: |
           git config --global user.name "abuuzayr"
           git config --global user.email "abu.uzayr@builtforfifty.com"
+          git remote rm origin
+          git remote add origin 'https://${{ secrets.GITHUB_TOKEN }}@github.com/abuuzayr/abuuzayr.github.io.git'
+          echo "CHECKING ORIGIN ====="
+          git remote show origin
 
       - name: run deploy script
         run: yarn && yarn run deploy
