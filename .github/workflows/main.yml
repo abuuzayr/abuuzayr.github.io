@@ -26,6 +26,9 @@ jobs:
       - uses: actions/checkout@v2
       - uses: oleksiyrudenko/gha-git-credentials@v2-latest
         with:
+          name: 'abuuzayr'
+          email: 'abu.uzayr@builtforfifty.com'
+          actor: 'abuuzayr'
           token: '${{ secrets.GITHUB_TOKEN }}'
       - run: |
           git remote show origin
