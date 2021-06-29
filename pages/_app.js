@@ -1,4 +1,5 @@
 import React from "react"
+import PropTypes from 'prop-types'
 import { ChakraProvider } from "@chakra-ui/react"
 import customTheme from "../styles/theme"
 import { Global, css } from "@emotion/react"
@@ -77,4 +78,14 @@ function MyApp({ Component, pageProps }) {
     </ChakraProvider>
   )
 }
+
+GlobalStyle.propTypes = {
+  children: PropTypes.node.isRequired
+}
+
+MyApp.propTypes = {
+  Component: PropTypes.node.isRequired,
+  pageProps: PropTypes.object.isRequired
+}
+
 export default MyApp

@@ -1,4 +1,5 @@
 import React from "react"
+import PropTypes from "prop-types"
 import {
   Text,
   Stack,
@@ -32,7 +33,7 @@ import {
 
 import Image from "./ChakraNextImage"
 
-export default function Cards({
+export default function Card({
   img,
   title,
   description,
@@ -186,4 +187,13 @@ export default function Cards({
       </ScaleFade>
     </Stack>
   )
+}
+
+Card.propTypes = {
+  img: PropTypes.string,
+  title: PropTypes.string,
+  description: PropTypes.string,
+  github: PropTypes.string,
+  url: PropTypes.string,
+  tags: PropTypes.array,
 }
