@@ -1,7 +1,8 @@
-import React from 'react'
-import { chakra, Flex, Stack, Text, Container as ChakraContainer, Link } from '@chakra-ui/react'
-import { ExternalLinkIcon, AddIcon } from '@chakra-ui/icons'
-import Navbar from './Navbar'
+import React from "react"
+import PropTypes from "prop-types"
+import { Flex, Stack, Text, Container as ChakraContainer, Link } from "@chakra-ui/react"
+import { ExternalLinkIcon, AddIcon } from "@chakra-ui/icons"
+import Navbar from "./Navbar"
 
 const Container = ({ children }) => {
   return (
@@ -33,6 +34,10 @@ const Container = ({ children }) => {
       </Stack>
     </ChakraContainer>
   )
+}
+
+Container.propTypes = {
+  children: PropTypes.node
 }
 
 export default Container

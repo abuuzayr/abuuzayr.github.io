@@ -1,9 +1,10 @@
-import { Link, Button, Heading, Stack, Text, useBreakpointValue, Box } from '@chakra-ui/react'
-import { FaLinkedin, FaEnvelope, FaGithub } from 'react-icons/fa'
-import SlideUpWhenVisible from '../hook/SlideUpWhenVisible'
+import React from "react"
+import { Link, Button, Heading, Stack, Text, useBreakpointValue, Box } from "@chakra-ui/react"
+import { FaLinkedin, FaEnvelope, FaGithub } from "react-icons/fa"
+import SlideUpWhenVisible from "../hook/SlideUpWhenVisible"
 
 export default function ContactMe() {
-  const buttonSize = useBreakpointValue([null, 'md', 'sm'])
+  const buttonSize = useBreakpointValue([null, "md", "sm"])
   return (
     <>
       <Stack
@@ -14,15 +15,15 @@ export default function ContactMe() {
         justifyContent="center"
       >
         <SlideUpWhenVisible>
-          <Heading fontSize={{ base: '4xl', md: '5xl' }} textAlign="center">
-            Let's talk
+          <Heading fontSize={{ base: "4xl", md: "5xl" }} textAlign="center">
+            Let&apos;s talk
           </Heading>
         </SlideUpWhenVisible>
 
         <SlideUpWhenVisible>
           <Text fontSize="md" color="white" textAlign="center">
-            I'm currently looking out for a remote work opportunity.
-            <br /> Or if you have cool ideas in mind, let's get in touch!
+            I&apos;m currently looking out for a remote work opportunity.
+            <br /> Or if you have cool ideas in mind, let&apos;s get in touch!
           </Text>
         </SlideUpWhenVisible>
 

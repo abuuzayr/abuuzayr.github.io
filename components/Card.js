@@ -1,3 +1,5 @@
+import React from "react"
+import PropTypes from "prop-types"
 import {
   Text,
   Stack,
@@ -7,13 +9,13 @@ import {
   ScaleFade,
   Center,
   Tooltip
-} from '@chakra-ui/react'
+} from "@chakra-ui/react"
 import {
   FaJs,
   FaCode,
   FaGithub,
   FaExternalLinkAlt,
-} from 'react-icons/fa'
+} from "react-icons/fa"
 import {
   SiTypescript,
   SiNextDotJs,
@@ -24,14 +26,14 @@ import {
   SiSpotify,
   SiItunes,
   SiOvercast
-} from 'react-icons/si'
+} from "react-icons/si"
 import {
   IoLogoPwa
-} from 'react-icons/io5'
+} from "react-icons/io5"
 
-import Image from './ChakraNextImage'
+import Image from "./ChakraNextImage"
 
-export default function Cards({
+export default function Card({
   img,
   title,
   description,
@@ -42,63 +44,63 @@ export default function Cards({
   const getTag = (tag) => {
     let values = {}
     switch (tag) {
-      case 'react':
-        values["color"] = '#61dbfb'
+      case "react":
+        values["color"] = "#61dbfb"
         values["icon"] = SiReact
         values["label"] = "React"
         break
-      case 'ts':
-        values["color"] = '#007ACC'
+      case "ts":
+        values["color"] = "#007ACC"
         values["icon"] = SiTypescript
         values["label"] = "TypeScript"
         break
-      case 'postgresql':
-        values["color"] = '#0064a5'
+      case "postgresql":
+        values["color"] = "#0064a5"
         values["icon"] = SiPostgresql
         values["label"] = "PostgreSQL"
         break
-      case 'js':
-        values["color"] = '#F0DB4F'
+      case "js":
+        values["color"] = "#F0DB4F"
         values["icon"] = FaJs
         values["label"] = "JavaScript"
         break
-      case 'gatsby':
-        values["color"] = '#362066'
+      case "gatsby":
+        values["color"] = "#362066"
         values["icon"] = SiGatsby
         values["label"] = "Gatsby"
         break
-      case 'spotify':
-        values["color"] = '#1DB954'
+      case "spotify":
+        values["color"] = "#1DB954"
         values["icon"] = SiSpotify
         values["label"] = "Spotify"
         break
-      case 'itunes':
-        values["color"] = '#EA4CC0'
+      case "itunes":
+        values["color"] = "#EA4CC0"
         values["icon"] = SiItunes
         values["label"] = "iTunes"
         break
-      case 'next':
-        values["color"] = 'white'
+      case "next":
+        values["color"] = "white"
         values["icon"] = SiNextDotJs
         values["label"] = "Next.js"
         break
-      case 'node':
-        values["color"] = '#3C873A'
+      case "node":
+        values["color"] = "#3C873A"
         values["icon"] = SiNodeDotJs
         values["label"] = "Node.js"
         break
-      case 'pwa':
-        values["color"] = '#6500C3'
+      case "pwa":
+        values["color"] = "#6500C3"
         values["icon"] = IoLogoPwa
         values["label"] = "Progressive Web App"
         break
-      case 'overcast':
-        values["color"] = '#FE7200'
+      case "overcast":
+        values["color"] = "#FE7200"
         values["icon"] = SiOvercast
         values["label"] = "Overcast"
         break
       default:
-        values["color"] = 'gray'
+        values["color"] = "gray"
         values["icon"] = FaCode
         values["label"] = ""
     }
@@ -107,7 +109,7 @@ export default function Cards({
 
   const Tags = tags.map((item) => {
     const tag = getTag(item)
-    return <Tooltip label={tag.label} fontSize="md">
+    return <Tooltip label={tag.label} fontSize="md" key={tag.label}>
       <span>
         <Icon as={tag.icon} color={tag.color} fontSize={30} />
       </span>
@@ -121,7 +123,7 @@ export default function Cards({
       minH="320px"
       maxH="500px"
       border="1px"
-      borderColor={{ base: '#333', md: 'borderColor' }}
+      borderColor={{ base: "#333", md: "borderColor" }}
     >
       <ScaleFade in={true} transition={{ duration: 1 }}>
         <Center>
@@ -178,11 +180,20 @@ export default function Cards({
           </Stack>
           <Stack isInline>{Tags}</Stack>
           <Divider />
-          <Text color="white" fontSize={['sm', 'md']}>
+          <Text color="white" fontSize={["sm", "md"]}>
             {description}
           </Text>
         </Stack>
       </ScaleFade>
     </Stack>
   )
+}
+
+Card.propTypes = {
+  img: PropTypes.string,
+  title: PropTypes.string,
+  description: PropTypes.string,
+  github: PropTypes.string,
+  url: PropTypes.string,
+  tags: PropTypes.array,
 }

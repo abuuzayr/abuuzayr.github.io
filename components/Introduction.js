@@ -1,4 +1,4 @@
-import { useState, useLayoutEffect } from "react"
+import React, { useState, useLayoutEffect } from "react"
 import {
   Link,
   Text,
@@ -15,7 +15,7 @@ import {
   SiTypescript,
   SiReact,
   SiNodeDotJs,
-} from 'react-icons/si'
+} from "react-icons/si"
 
 const BlitzLogo = () => (
   <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="25px" height="25px">
@@ -31,10 +31,10 @@ export default function Introduction() {
   const buttonVariant = useBreakpointValue(["ghost", "solid"])
 
   useLayoutEffect(() => {
-    if (typeof window === 'undefined') return
-    window.addEventListener('scroll', () => setOpacityToRemove(window.scrollY))
+    if (typeof window === "undefined") return
+    window.addEventListener("scroll", () => setOpacityToRemove(window.scrollY))
     return () => {
-      window.removeEventListener('scroll', () => setOpacityToRemove(window.scrollY))
+      window.removeEventListener("scroll", () => setOpacityToRemove(window.scrollY))
     }
   }, [])
 
@@ -67,7 +67,6 @@ export default function Introduction() {
           color="white"
           fontSize={["5xl", "7xl"]}
           lineHeight={"95%"}
-          color="white"
           letterSpacing={{ sm: "-1.2px", md: "-1.8px" }}
           position="relative"
           zIndex={1}
