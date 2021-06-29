@@ -27,8 +27,8 @@ const Container = ({ children }) => {
             Chakra UI <ExternalLinkIcon mx="2px" />
           </Link>
           <AddIcon mr={1} />
-          <Link isExternal href="https://github.com/abuuzayr/abuuzayr.github.io" color="buff" fontWeight="semibold" _hover={{ textDecoration: "none" }}>
-            GitHub Pages <ExternalLinkIcon mx="2px" />
+          <Link isExternal href="https://vercel.com" color="buff" fontWeight="semibold" _hover={{ textDecoration: "none" }}>
+            Vercel <ExternalLinkIcon mx="2px" />
           </Link>
         </Text>
       </Stack>
