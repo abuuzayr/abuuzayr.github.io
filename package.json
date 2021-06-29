@@ -39,5 +39,10 @@
   },
   "bugs": {
     "url": "https://github.com/abuuzayr/abuuzayr.github.io/issues"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.29.0",
+    "eslint-config-next": "^11.0.1"
   }
 }
