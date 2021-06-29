@@ -1,4 +1,5 @@
-import NextDocument, { Html, Head, Main, NextScript } from 'next/document'
+import React from "react"
+import NextDocument, { Html, Head, Main, NextScript } from "next/document"
 
 export default class MyDocument extends NextDocument {
   render() {

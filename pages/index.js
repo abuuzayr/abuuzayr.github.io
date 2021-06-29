@@ -1,3 +1,4 @@
+import React from "react"
 import { Stack, Box } from '@chakra-ui/react'
 import Container from '../components/Container'
 import Introduction from '../components/Introduction'

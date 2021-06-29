@@ -1,5 +1,5 @@
 import React from 'react'
-import { chakra, Flex, Stack, Text, Container as ChakraContainer, Link } from '@chakra-ui/react'
+import { Flex, Stack, Text, Container as ChakraContainer, Link } from '@chakra-ui/react'
 import { ExternalLinkIcon, AddIcon } from '@chakra-ui/icons'
 import Navbar from './Navbar'
 

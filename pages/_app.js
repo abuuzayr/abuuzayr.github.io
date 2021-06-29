@@ -1,6 +1,7 @@
-import { ChakraProvider } from '@chakra-ui/react'
-import customTheme from '../styles/theme'
-import { Global, css } from '@emotion/react'
+import React from "react"
+import { ChakraProvider } from "@chakra-ui/react"
+import customTheme from "../styles/theme"
+import { Global, css } from "@emotion/react"
 const GlobalStyle = ({ children }) => {
   return (
     <>
