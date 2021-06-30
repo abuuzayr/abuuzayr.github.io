@@ -25,11 +25,15 @@ import {
   SiGatsby,
   SiSpotify,
   SiItunes,
-  SiOvercast
+  SiOvercast,
+  SiServerless,
+  SiMongodb,
+  SiAzurefunctions
 } from "react-icons/si"
 import {
   IoLogoPwa
 } from "react-icons/io5"
+import { RiVuejsFill } from "react-icons/ri"
 
 import Image from "./ChakraNextImage"
 
@@ -98,6 +102,26 @@ export default function Card({
         values["color"] = "#FE7200"
         values["icon"] = SiOvercast
         values["label"] = "Overcast"
+        break
+      case "vue":
+        values["color"] = "#42b883"
+        values["icon"] = RiVuejsFill
+        values["label"] = "Vue JS"
+        break
+      case "serverless":
+        values["color"] = "#FF3A3D"
+        values["icon"] = SiServerless
+        values["label"] = "Serverless Architecture"
+        break
+      case "mongo":
+        values["color"] = "#4db33d"
+        values["icon"] = SiMongodb
+        values["label"] = "Mongo DB"
+        break
+      case "azure":
+        values["color"] = "#F1CE40"
+        values["icon"] = SiAzurefunctions
+        values["label"] = "Azure Functions"
         break
       default:
         values["color"] = "gray"
