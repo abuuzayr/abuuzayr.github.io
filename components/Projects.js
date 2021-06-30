@@ -30,6 +30,13 @@ const projects = [
     github: "https://github.com/abuuzayr/js-talks",
     url: "https://js-talks.netlify.app",
     tags: ["js", "gatsby", "spotify", "itunes", "overcast"],
+  }, {
+    img: "https://media.builtforfifty.workers.dev/motoparker.png",
+    title: "MotoParker",
+    description: "Singapore crowd sourced and user submitted motorcycle parking locator",
+    github: "https://github.com/abuuzayr/motoparker",
+    url: "https://motoparker.builtforfifty.com",
+    tags: ["js", "vue", "serverless", "mongo", "azure"],
   }
 ]
 
