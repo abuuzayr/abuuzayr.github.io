@@ -23,7 +23,7 @@ export default function ContactMe() {
         <SlideUpWhenVisible>
           <Text fontSize="md" color="white" textAlign="center">
             I&apos;m currently looking out for a remote work opportunity.
-            <br /> Or if you have cool ideas in mind, let&apos;s get in touch!
+            <Text as="span" display={["none", "inline"]}><br /></Text> Or if you have cool ideas in mind, let&apos;s get in touch!
           </Text>
         </SlideUpWhenVisible>
 
